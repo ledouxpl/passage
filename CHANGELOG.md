@@ -1,6 +1,9 @@
 
 # Changelog
 
+## [Unreleased]
+- 🔄 Update GoogleSignIn (iOS) to 9.x. The iOS gatekeeper's API surface (`GIDSignIn.signInWithPresentingViewController`, `GIDSignInResult.user.idToken/accessToken.tokenString`) is unchanged across 7.x → 9.x, so no source change is required; the sample app is bumped to `9.0.0` to certify it (pulls AppAuth 2.x + GTMAppAuth 5.x). GoogleSignIn 9.x still targets iOS 12, matching Passage's deployment target.
+
 ## [1.6.0] - January 23rd, 2026
 - ✨ **`[FEATURE]`**: Add `getIdToken()` method in `Passage` to retrieve the current user's Firebase ID token, with an option to force refresh.
 - 🔄 Update Kotlin to 2.3.0.
